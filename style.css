@@ -976,6 +976,13 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
   color: var(--dourado-claro);
   margin: 0;
 }
+.member-credit{
+  margin: 10px 0 0;
+  font-family: var(--font-text);
+  font-size: .68rem;
+  font-style: italic;
+  color: var(--ink-faint);
+}
 
 @media (max-width: 1024px){
   .band-grid{ grid-template-columns: repeat(3, 1fr); max-width: 720px; }
