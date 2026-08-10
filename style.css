@@ -950,6 +950,15 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
   font-size: 1.05rem;
   color: var(--branco-osso);
 }
+.member-avatar-photo{
+  background: var(--preto-tinta);
+  overflow: hidden;
+}
+.member-avatar-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .member-name{
   font-family: var(--font-display);
   font-weight: 400;
