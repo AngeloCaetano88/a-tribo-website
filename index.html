@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">A Tribo — Digressão 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- global motion layers -->
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<header class="nav-wrap">
+  <nav class="nav glass" id="siteNav">
+    <a class="nav-brand" href="#topo">
+      <span class="nav-logo-frame"><img src="assets/logo.png" alt="A Tribo" class="nav-logo-img"></span>
+      <span class="nav-brand-text">A TRIBO</span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#shows" data-i18n="nav.shows">Concertos</a></li>
+        <li><a href="#musica" data-i18n="nav.music">Música</a></li>
+        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#formacao" data-i18n="nav.band">Formação</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galeria</a></li>
+        <li><a href="#loja" class="nav-loja" data-i18n="nav.shop">Loja</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="true">PT</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="orb orb-c"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-rays"></div>
+    </div>
+
+    <div class="hero-content reveal" data-reveal="scale-blur">
+      <div class="hero-logo-frame border-glow-rotating">
+        <img src="assets/logo.png" alt="A Tribo" class="hero-logo-img floaty">
+      </div>
+
+      <h1 class="hero-title reveal" data-reveal="up" data-delay="1">A TRIBO</h1>
+      <p class="hero-subtitle reveal" data-reveal="up" data-delay="2" data-i18n="hero.subtitle">ROCK QUE UNE A MANADA</p>
+
+      <div class="hero-ctas reveal" data-reveal="up" data-delay="3">
+        <a href="#shows" class="btn btn-primary">
+          <span class="btn-label" data-i18n="hero.cta.shows">Ver Concertos</span>
+          <span class="btn-shine" aria-hidden="true"></span>
+        </a>
+        <a href="#musica" class="btn btn-outline">
+          <span class="btn-label" data-i18n="hero.cta.listen">Ouvir Agora</span>
+          <span class="btn-border-anim" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- SHOWS -->
+  <section class="shows" id="shows">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="shows.eyebrow">Digressão 2026</p>
+      <h2 class="section-title" data-i18n="shows.title">Próximos Concertos</h2>
+    </div>
+
+    <div class="shows-grid">
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="show-photo show-photo-poster">
+          <img src="assets/gallery/cartaz-semana-do-mar.jpg" alt="Cartaz do concerto A Tribo — Semana do Mar 2026, 08 Agosto, Palco do Mar, Horta">
+        </div>
+        <div class="show-info">
+          <p class="show-event">Semana do Mar 2026</p>
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show0.date">08 AGO 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Palco do Mar — CEMAH</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="show-photo"><span data-i18n="show.photoLabel">Foto do Concerto</span></div>
+        <div class="show-info">
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show1.date">14 SET 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Marina da Horta — Faial</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <div class="show-photo"><span data-i18n="show.photoLabel">Foto do Concerto</span></div>
+        <div class="show-info">
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show2.date">28 SET 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Parque Urbano — Horta</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="show-photo"><span data-i18n="show.photoLabel">Foto do Concerto</span></div>
+        <div class="show-info">
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show3.date">05 OUT 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Angústias — Faial</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- MÚSICA / SOBRE -->
+  <section class="feature-dark" id="musica">
+    <div class="feature-bg" aria-hidden="true">
+      <div class="orb orb-d"></div>
+      <div class="orb orb-e"></div>
+      <div class="hero-grid faint"></div>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-copy reveal" data-reveal="left">
+        <p class="eyebrow" data-i18n="feature.eyebrow">Novo Single</p>
+        <h2 class="section-title light">Sangue e Groove</h2>
+        <p class="feature-text" data-i18n="feature.text">A Tribo é uma banda de tributo formada em 2018, que reinterpreta êxitos icónicos com peso, groove e um toque original. Ouve agora o novo single e acompanha a digressão 2026 pelos Açores.</p>
+        <div class="feature-ctas">
+          <a href="#" class="btn btn-gold">
+            <span class="btn-label" data-i18n="feature.cta.spotify">Ouvir no Spotify</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="btn btn-outline">
+            <span class="btn-label" data-i18n="feature.cta.single">Novo Single</span>
+            <span class="btn-border-anim" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="feature-visual reveal" data-reveal="right">
+        <div class="vinyl-frame border-glow-rotating spotlight-card">
+          <div class="vinyl" aria-hidden="true">
+            <div class="vinyl-groove"></div>
+            <div class="vinyl-label"><img src="assets/logo.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="about-inner reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="about.eyebrow">Sobre a banda</p>
+      <h2 class="section-title" data-i18n="about.title">A manada cresce a cada concerto</h2>
+      <p class="about-text" data-i18n="about.text">O rock que conheces, com a força que não esperavas. De Amália Rodrigues a Michael Jackson, de tributo a espetáculo — com arranjos modernos e um toque original, a Tribo recria temas icónicos sem perder a essência que os torna inesquecíveis.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <span class="stat-num" data-count="120">0</span>
+        <span class="stat-label" data-i18n="stat1.label">Concertos realizados</span>
+      </div>
+      <div class="stat-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <span class="stat-num" data-count="8">0</span>
+        <span class="stat-label" data-i18n="stat2.label">Anos de estrada</span>
+      </div>
+      <div class="stat-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <span class="stat-num" data-count="45">0</span>
+        <span class="stat-label" data-i18n="stat3.label">Mil ouvintes/mês</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section class="band" id="formacao">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="band.eyebrow">Formação</p>
+      <h2 class="section-title" data-i18n="band.title">Os Músicos</h2>
+    </div>
+
+    <div class="band-grid">
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="member-avatar"><span>RD</span></div>
+        <h3 class="member-name">Rafa Duarte</h3>
+        <p class="member-role" data-i18n="member1.role">Voz</p>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="member-avatar"><span>IM</span></div>
+        <h3 class="member-name">Ivo Martins</h3>
+        <p class="member-role" data-i18n="member2.role">Guitarra</p>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <div class="member-avatar"><span>JR</span></div>
+        <h3 class="member-name">Júlio Rosa</h3>
+        <p class="member-role" data-i18n="member3.role">Teclas</p>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="member-avatar"><span>JJ</span></div>
+        <h3 class="member-name">João (Julga)</h3>
+        <p class="member-role" data-i18n="member4.role">Baixo</p>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="member-avatar"><span>NC</span></div>
+        <h3 class="member-name">Nuno Cardoso</h3>
+        <p class="member-role" data-i18n="member5.role">Bateria</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="media" id="galeria">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="media.eyebrow">Galeria</p>
+      <h2 class="section-title" data-i18n="media.title">Fotos e Vídeos</h2>
+    </div>
+
+    <div class="media-filters reveal" data-reveal="up" role="group" aria-label="Filtrar galeria">
+      <button type="button" class="media-filter-btn is-active" data-filter="all" data-i18n="media.filter.all">Todos</button>
+      <button type="button" class="media-filter-btn" data-filter="show0" data-i18n="media.filter.show0">08 Ago — Semana do Mar</button>
+      <button type="button" class="media-filter-btn" data-filter="show1" data-i18n="media.filter.show1">14 Set — Marina da Horta</button>
+      <button type="button" class="media-filter-btn" data-filter="show2" data-i18n="media.filter.show2">28 Set — Parque Urbano</button>
+      <button type="button" class="media-filter-btn" data-filter="show3" data-i18n="media.filter.show3">05 Out — Angústias</button>
+    </div>
+
+    <div class="media-grid">
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-01-baixista.jpg" alt="Baixista da Tribo ao vivo na Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-02-vocalista.jpg" alt="Vocalista da Tribo ao vivo na Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-03-publico.jpg" alt="Público na Semana do Mar 2026, Horta, Faial" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-04-vocalista-pb.jpg" alt="Vocalista da Tribo, preto e branco, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-05-baixista-luzes.jpg" alt="Baixista da Tribo sob luzes coloridas, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-06-baterista.jpg" alt="Baterista da Tribo ao vivo na Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-07-grupo-1.jpg" alt="A Tribo em grupo no palco, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-08-grupo-2.jpg" alt="A Tribo em grupo nos bastidores, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-09-selfie-vocal.jpg" alt="Selfie com a vocalista da Tribo, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-10-bastidores-1.jpg" alt="Bastidores da Tribo, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-11-bastidores-2.jpg" alt="Bastidores da Tribo, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show1">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10.5" r="1.6"/><path d="m4 17 5-4.5 3 2.5 3.5-4L21 15"/></svg>
+        </div>
+        <span class="media-label" data-i18n="media.photoLabel">Foto</span>
+      </div>
+
+      <div class="media-tile spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show2">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10.5" r="1.6"/><path d="m4 17 5-4.5 3 2.5 3.5-4L21 15"/></svg>
+        </div>
+        <span class="media-label" data-i18n="media.photoLabel">Foto</span>
+      </div>
+
+      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show3">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
+        </div>
+        <span class="media-label" data-i18n="media.videoLabel">Vídeo ao vivo</span>
+      </div>
+    </div>
+
+    <p class="media-empty" data-i18n="media.empty" hidden>Ainda não há fotos ou vídeos nesta categoria.</p>
+    <p class="media-hint" data-i18n="media.hint">Espaço reservado para fotos e vídeos dos concertos — conteúdo a adicionar em breve.</p>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" data-i18n-aria="lightbox.close" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" data-i18n-aria="lightbox.prev" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="lightbox-frame">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" data-i18n-aria="lightbox.next" aria-label="Foto seguinte">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <!-- LOJA / CTA final -->
+  <section class="cta-final" id="loja">
+    <div class="cta-bg" aria-hidden="true">
+      <div class="orb orb-f"></div>
+    </div>
+    <div class="cta-content reveal" data-reveal="scale-blur">
+      <h2 class="section-title light" data-i18n="cta.title">Entra para a manada</h2>
+      <p class="cta-text" data-i18n="cta.text">T-shirts, vinis e recordações da digressão 2026 — direto da loja oficial. Os concertos são sempre de entrada gratuita.</p>
+      <a href="#" class="btn btn-primary btn-large">
+        <span class="btn-label" data-i18n="cta.button">Ver Loja</span>
+        <span class="btn-shine" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACTO / BOOKING -->
+  <section class="contact" id="contacto">
+    <div class="contact-inner reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Booking</p>
+      <h2 class="section-title" data-i18n="contact.title">Fala connosco</h2>
+      <p class="contact-text" data-i18n="contact.text">Para marcar shows, parcerias e imprensa, contacta a produção da banda.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a href="tel:+351919163198" class="contact-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.5l1.8 4.3-2.2 1.6a11.5 11.5 0 0 0 5.9 5.9l1.6-2.2L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5A15.5 15.5 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4z"/></svg>
+        </span>
+        <span class="contact-label" data-i18n="contact.phoneLabel">Telefone</span>
+        <span class="contact-value">+351 919 163 198</span>
+      </a>
+
+      <a href="mailto:a.tribo2025@gmail.com" class="contact-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7 7.5 5.8L19.5 7"/></svg>
+        </span>
+        <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+        <span class="contact-value">a.tribo2025@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p data-i18n="footer.rights">© 2026 A Tribo. Todos os direitos reservados.</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/_a_tribo__/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61577546608169" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="#">Youtube</a>
+    <a href="#">Spotify</a>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <p class="cookie-text" data-i18n="cookie.text">Usamos apenas armazenamento essencial do navegador para guardar a tua preferência de idioma. Não usamos cookies de publicidade nem de rastreio.</p>
+  <div class="cookie-actions">
+    <button type="button" class="btn btn-outline cookie-btn cookie-reject" data-i18n="cookie.reject">Rejeitar</button>
+    <button type="button" class="btn btn-primary cookie-btn cookie-accept" data-i18n="cookie.accept">Aceitar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
