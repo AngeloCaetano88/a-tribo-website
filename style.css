@@ -272,6 +272,25 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
 }
 .hero-bg{ position: absolute; inset: 0; z-index: 0; overflow: hidden; }
 
+.hero-photo{
+  position: absolute; inset: 0;
+  z-index: 0;
+}
+.hero-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+  opacity: .58;
+  filter: contrast(1.08) brightness(.95);
+}
+.hero-photo::after{
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 65% 60% at 50% 46%, rgba(10,8,10,.82) 0%, rgba(10,8,10,.5) 48%, rgba(10,8,10,.2) 75%, rgba(10,8,10,.55) 100%),
+    linear-gradient(180deg, rgba(10,8,10,.55) 0%, transparent 22%, transparent 68%, rgba(10,8,10,.85) 100%);
+}
+
 /* giant watermark echo of the wordmark for editorial depth */
 .hero-bg::before{
   content: "A TRIBO";
