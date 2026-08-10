@@ -1273,6 +1273,12 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
   .hero-subtitle::before, .hero-subtitle::after{ width: 16px; }
   .shows-grid{ grid-template-columns: 1fr; max-width: 420px; }
   .hero-logo-frame{ width: 88px; height: 88px; margin-bottom: 28px; }
+  .hero-photo img{ object-fit: contain; object-position: center top; opacity: .5; }
+  .hero-photo::after{
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 30%, rgba(10,8,10,.78) 0%, rgba(10,8,10,.45) 45%, rgba(10,8,10,.2) 70%, rgba(10,8,10,.6) 100%),
+      linear-gradient(180deg, rgba(10,8,10,.6) 0%, transparent 20%, transparent 55%, rgba(10,8,10,.9) 100%);
+  }
   .hero-ctas{ flex-direction: column; width: 100%; gap: 14px; }
   .hero-ctas .btn{ width: 100%; }
   .section-title{ font-size: clamp(2.1rem, 8vw, 2.8rem); }
