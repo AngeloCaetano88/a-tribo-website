@@ -1013,6 +1013,43 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
 }
 
 /* ============================================================
+   Vídeos reais (musica.html)
+   ============================================================ */
+.video-grid{
+  max-width: var(--container); margin: 0 auto var(--sp-4);
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-4);
+}
+.video-card{
+  margin: 0;
+  background: var(--preto-tinta);
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.spotlight-card:hover.video-card{ box-shadow: var(--shadow-lg), var(--shadow-gold); }
+.video-card video{
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  background: #000;
+}
+.video-caption{
+  padding: 16px 20px;
+  margin: 0;
+  font-family: var(--font-support);
+  font-weight: 500;
+  font-size: .84rem;
+  letter-spacing: .02em;
+  color: var(--branco-osso);
+  border-top: 1px solid var(--hairline-dark);
+}
+
+@media (max-width: 780px){
+  .video-grid{ grid-template-columns: 1fr; max-width: 520px; }
+}
+
+/* ============================================================
    Galeria / Media
    ============================================================ */
 .media{ background: var(--paper); }

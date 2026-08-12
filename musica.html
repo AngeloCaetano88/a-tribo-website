@@ -18,8 +18,10 @@ window.PAGE_I18N = {
     'feature.cta.single': 'Novo Single',
     'videos.eyebrow': 'Vídeos',
     'videos.title': 'Ao Vivo e nos Bastidores',
-    'videos.subtitle': 'A banda está a preparar o canal oficial no YouTube — em breve, os primeiros vídeos da digressão 2026 aparecem aqui.',
+    'videos.subtitle': 'A banda está a preparar o canal oficial no YouTube — entretanto, fica com os primeiros vídeos da digressão.',
     'videos.label': 'Vídeo em breve',
+    'videos.caption1': 'Noite Branca 2025 — Primeiro Concerto',
+    'videos.caption2': 'Primeira Apresentação da Tribo',
     'videos.hint': 'Segue a A Tribo nas redes sociais para seres o primeiro a saber quando o canal do YouTube estiver no ar.'
   },
   en: {
@@ -30,8 +32,10 @@ window.PAGE_I18N = {
     'feature.cta.single': 'New Single',
     'videos.eyebrow': 'Videos',
     'videos.title': 'Live and Behind the Scenes',
-    'videos.subtitle': 'The band is setting up its official YouTube channel — the first videos from the 2026 tour will appear here soon.',
+    'videos.subtitle': 'The band is setting up its official YouTube channel — in the meantime, here are the first videos from the tour.',
     'videos.label': 'Video coming soon',
+    'videos.caption1': 'Noite Branca 2025 — First Show',
+    'videos.caption2': 'A Tribo’s First Performance',
     'videos.hint': 'Follow A Tribo on social media to be the first to know when the YouTube channel goes live.'
   }
 };
@@ -89,28 +93,23 @@ window.PAGE_I18N = {
     <div class="section-head reveal" data-reveal="up">
       <p class="eyebrow" data-i18n="videos.eyebrow">Vídeos</p>
       <h2 class="section-title" data-i18n="videos.title">Ao Vivo e nos Bastidores</h2>
-      <p class="section-subtitle" data-i18n="videos.subtitle">A banda está a preparar o canal oficial no YouTube — em breve, os primeiros vídeos da digressão 2026 aparecem aqui.</p>
+      <p class="section-subtitle" data-i18n="videos.subtitle">A banda está a preparar o canal oficial no YouTube — entretanto, fica com os primeiros vídeos da digressão.</p>
     </div>
 
-    <div class="media-grid">
-      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
-        <div class="media-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
-        </div>
-        <span class="media-label" data-i18n="videos.label">Vídeo em breve</span>
-      </div>
-      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
-        <div class="media-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
-        </div>
-        <span class="media-label" data-i18n="videos.label">Vídeo em breve</span>
-      </div>
-      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
-        <div class="media-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
-        </div>
-        <span class="media-label" data-i18n="videos.label">Vídeo em breve</span>
-      </div>
+    <div class="video-grid">
+      <figure class="video-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <video controls preload="metadata" poster="assets/videos/noite-branca-2025-poster.jpg">
+          <source src="assets/videos/noite-branca-2025.mp4" type="video/mp4">
+        </video>
+        <figcaption class="video-caption" data-i18n="videos.caption1">Noite Branca 2025 — Primeiro Concerto</figcaption>
+      </figure>
+
+      <figure class="video-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <video controls preload="metadata" poster="assets/videos/primeira-apresentacao-poster.jpg">
+          <source src="assets/videos/primeira-apresentacao.mp4" type="video/mp4">
+        </video>
+        <figcaption class="video-caption" data-i18n="videos.caption2">Primeira Apresentação da Tribo</figcaption>
+      </figure>
     </div>
 
     <p class="media-hint" data-i18n="videos.hint">Segue a A Tribo nas redes sociais para seres o primeiro a saber quando o canal do YouTube estiver no ar.</p>
