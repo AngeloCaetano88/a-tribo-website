@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Notícias — A Tribo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = {
+  pt: {
+    'meta.title': 'Notícias — A Tribo',
+    'news.eyebrow': 'Notícias',
+    'news.title': 'Novidades da Tribo'
+  },
+  en: {
+    'meta.title': 'News — A Tribo',
+    'news.eyebrow': 'News',
+    'news.title': 'A Tribo Updates'
+  }
+};
+</script>
+</head>
+<body data-page="noticias">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+
+  <!-- NOTÍCIAS -->
+  <section class="news page-hero-shell" id="noticias">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="news.eyebrow">Notícias</p>
+      <h1 class="section-title" data-i18n="news.title">Novidades da Tribo</h1>
+    </div>
+
+    <div class="news-grid" id="newsGrid"></div>
+  </section>
+
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="news-data.js"></script>
+<script src="partials.js"></script>
+<script src="script.js"></script>
+<script src="news.js"></script>
+</body>
+</html>

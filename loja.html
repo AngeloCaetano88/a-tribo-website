@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Loja — A Tribo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = {
+  pt: {
+    'meta.title': 'Loja — A Tribo',
+    'cta.title': 'Entra para a manada',
+    'cta.text': 'T-shirts, vinis e recordações da digressão 2026 — direto da loja oficial. Os concertos são sempre de entrada gratuita.',
+    'cta.button': 'Ver Loja',
+    'shop.hint': 'A loja online está a ser preparada. Entretanto, contacta-nos para reservares o teu merch.'
+  },
+  en: {
+    'meta.title': 'Shop — A Tribo',
+    'cta.title': 'Join the pack',
+    'cta.text': 'T-shirts, vinyls and keepsakes from the 2026 tour — straight from the official store. Shows are always free to attend.',
+    'cta.button': 'Visit Shop',
+    'shop.hint': 'The online shop is on its way. In the meantime, get in touch to reserve your merch.'
+  }
+};
+</script>
+</head>
+<body data-page="loja">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+
+  <!-- LOJA -->
+  <section class="cta-final page-hero-shell" id="loja">
+    <div class="cta-bg" aria-hidden="true">
+      <div class="orb orb-f"></div>
+    </div>
+    <div class="cta-content reveal" data-reveal="scale-blur">
+      <h1 class="section-title light" data-i18n="cta.title">Entra para a manada</h1>
+      <p class="cta-text" data-i18n="cta.text">T-shirts, vinis e recordações da digressão 2026 — direto da loja oficial. Os concertos são sempre de entrada gratuita.</p>
+      <a href="contacto.html" class="btn btn-primary btn-large">
+        <span class="btn-label" data-i18n="cta.button">Ver Loja</span>
+        <span class="btn-shine" aria-hidden="true"></span>
+      </a>
+      <p class="shop-hint" data-i18n="shop.hint">A loja online está a ser preparada. Entretanto, contacta-nos para reservares o teu merch.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

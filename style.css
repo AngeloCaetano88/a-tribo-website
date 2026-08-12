@@ -195,6 +195,9 @@ img{ max-width: 100%; display: block; }
 .nav-links a:hover{ opacity: 1; }
 .nav-links a:hover::after{ width: 100%; left: 0; }
 .nav-loja{ color: var(--dourado-claro) !important; opacity: 1 !important; font-weight: 600; }
+.nav-links a.is-active-page{ opacity: 1; }
+.nav-links a.is-active-page::after{ width: 100%; left: 0; }
+.mobile-menu-links a.is-active-page{ color: var(--dourado-claro); opacity: 1; }
 
 .lang-switch{
   display: flex; align-items: center; gap: 6px;
@@ -340,6 +343,22 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
 .section-head{ text-align: center; max-width: 640px; margin: 0 auto var(--sp-6); }
 .section-head .eyebrow{ justify-content: center; }
 .section-head .eyebrow::before{ display: none; }
+.section-subtitle{
+  color: var(--paper-ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 4px 0 0;
+}
+.section-title.light + .section-subtitle{ color: var(--ink-soft); }
+
+/* First section on inner pages (no hero above) needs room under the sticky nav */
+.page-hero-shell{ padding-top: 168px; }
+@media (max-width: 900px){
+  .page-hero-shell{ padding-top: 140px; }
+}
+@media (max-width: 640px){
+  .page-hero-shell{ padding-top: 120px; }
+}
 
 /* ============================================================
    HERO
@@ -1266,6 +1285,217 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
 }
 
 /* ============================================================
+   Notícias / News
+   ============================================================ */
+.news{ background: var(--paper); }
+.news-grid{
+  max-width: var(--container); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-4);
+}
+.news-card{
+  background: linear-gradient(165deg, var(--preto-tinta-3), var(--preto-tinta) 60%, #0f0c10);
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  display: flex; flex-direction: column;
+}
+.spotlight-card:hover.news-card{ box-shadow: var(--shadow-lg), var(--shadow-gold); }
+.news-cover{ aspect-ratio: 16/10; overflow: hidden; background: var(--preto-tinta); }
+.news-cover img{ width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s var(--ease-out); }
+.spotlight-card:hover .news-cover img{ transform: scale(1.06); }
+.news-body{ padding: 22px 22px 26px; }
+.news-date{
+  font-family: var(--font-support);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .68rem;
+  color: var(--vermelho-sangue-2);
+  margin: 0 0 10px;
+}
+.news-title{
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1.15;
+  color: var(--branco-osso);
+  margin: 0 0 10px;
+}
+.news-excerpt{
+  color: var(--ink-soft);
+  font-size: .88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px){
+  .news-grid{ grid-template-columns: repeat(2, 1fr); max-width: 760px; }
+}
+@media (max-width: 640px){
+  .news-grid{ grid-template-columns: 1fr; max-width: 460px; }
+}
+
+/* Post detail page */
+.post{ background: var(--paper); }
+.post-inner{ max-width: 720px; margin: 0 auto; }
+.post-back{
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-support);
+  font-weight: 600;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--vermelho-sangue-2);
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+.post-date{
+  font-family: var(--font-support);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .72rem;
+  color: var(--vermelho-sangue-2);
+  margin: 0 0 14px;
+}
+.post-title{
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.05;
+  color: var(--paper-ink);
+  margin: 0 0 32px;
+}
+.post-cover{
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16/9;
+  background: var(--preto-tinta);
+}
+.post-cover img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-body p{
+  color: var(--paper-ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin: 0 0 24px;
+}
+.post-share{
+  margin-top: var(--sp-5);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--hairline-light);
+  display: flex; align-items: center; gap: 14px;
+  flex-wrap: wrap;
+}
+.post-share-label{
+  font-family: var(--font-support);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .72rem;
+  color: var(--paper-ink-soft);
+}
+
+/* ============================================================
+   Home teasers (próximo concerto + novidades)
+   ============================================================ */
+.next-show{ background: var(--paper); }
+.next-show-card{
+  max-width: 900px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1.3fr;
+  background: linear-gradient(165deg, var(--preto-tinta-3), var(--preto-tinta) 55%, #0f0c10);
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.next-show-photo{ position: relative; background: #05070c; }
+.next-show-photo img{ width: 100%; height: 100%; object-fit: contain; display: block; }
+.next-show-info{ padding: 40px 36px; display: flex; flex-direction: column; justify-content: center; }
+.next-show-info .show-event{ margin-bottom: 14px; }
+.next-show-info .show-venue{ font-size: 2rem; padding-bottom: 0; border: none; margin-bottom: 22px; }
+.next-show-actions{ display: flex; gap: 14px; flex-wrap: wrap; }
+
+@media (max-width: 780px){
+  .next-show-card{ grid-template-columns: 1fr; }
+  .next-show-photo{ aspect-ratio: 4/3; }
+  .next-show-info{ padding: 28px 24px; }
+}
+
+.teasers{ background: var(--paper); }
+.teaser-grid{
+  max-width: var(--container); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-4);
+}
+.teaser-card{
+  background: linear-gradient(165deg, var(--preto-tinta-3), var(--preto-tinta) 60%, #0f0c10);
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex; flex-direction: column;
+}
+.spotlight-card:hover.teaser-card{ box-shadow: var(--shadow-lg), var(--shadow-gold); }
+.teaser-media{
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 60% at 25% 25%, rgba(179,31,42,.22), transparent 60%),
+    radial-gradient(ellipse 60% 55% at 80% 80%, rgba(207,154,62,.16), transparent 60%),
+    linear-gradient(165deg, #241a26, #150f16);
+  display: flex; align-items: center; justify-content: center;
+}
+.teaser-media img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+.teaser-play{
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(231,198,122,.4);
+  color: var(--dourado-claro);
+  display: flex; align-items: center; justify-content: center;
+}
+.teaser-play svg{ width: 22px; height: 22px; }
+.teaser-body{ padding: 26px 26px 28px; }
+.teaser-eyebrow{
+  font-family: var(--font-support);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .68rem;
+  color: var(--vermelho-sangue-2);
+  margin: 0 0 10px;
+}
+.teaser-title{
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--branco-osso);
+  margin: 0 0 10px;
+}
+.teaser-text{
+  color: var(--ink-soft);
+  font-size: .92rem;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+.teaser-link{
+  font-family: var(--font-support);
+  font-weight: 600;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--dourado-claro);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: gap .25s ease;
+}
+.teaser-link:hover{ gap: 10px; }
+
+@media (max-width: 780px){
+  .teaser-grid{ grid-template-columns: 1fr; max-width: 480px; }
+}
+
+/* ============================================================
    CTA final
    ============================================================ */
 .cta-final{
@@ -1287,6 +1517,7 @@ section{ position: relative; padding: var(--sp-7) var(--gutter); }
   box-shadow: var(--shadow-lg);
 }
 .cta-text{ color: var(--ink-soft); margin: 0 0 38px; font-size: 1.04rem; }
+.shop-hint{ color: var(--ink-faint); font-size: .84rem; font-style: italic; margin: 24px 0 0; }
 
 /* ============================================================
    Footer

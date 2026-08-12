@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Formação — A Tribo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = {
+  pt: {
+    'meta.title': 'Formação — A Tribo',
+    'about.eyebrow': 'Sobre a banda',
+    'about.title': 'A manada cresce a cada concerto',
+    'about.text': 'O rock que conheces, com a força que não esperavas. De Amália Rodrigues a Michael Jackson, de tributo a espetáculo — com arranjos modernos e um toque original, a Tribo recria temas icónicos sem perder a essência que os torna inesquecíveis.',
+    'stat1.label': 'Concertos realizados',
+    'stat2.label': 'Anos de estrada',
+    'stat3.label': 'Mil ouvintes/mês',
+    'band.eyebrow': 'Formação',
+    'band.title': 'Os Músicos',
+    'member1.role': 'Voz',
+    'member2.role': 'Guitarra',
+    'member3.role': 'Teclas',
+    'member4.role': 'Baixo',
+    'member5.role': 'Bateria'
+  },
+  en: {
+    'meta.title': 'Band — A Tribo',
+    'about.eyebrow': 'About the band',
+    'about.title': 'The pack grows with every show',
+    'about.text': 'The rock you know, with the force you didn’t expect. From Amália Rodrigues to Michael Jackson, from tribute to spectacle — with modern arrangements and an original touch, A Tribo reimagines iconic songs without losing the essence that makes them unforgettable.',
+    'stat1.label': 'Shows played',
+    'stat2.label': 'Years on the road',
+    'stat3.label': 'K listeners/month',
+    'band.eyebrow': 'Lineup',
+    'band.title': 'The Musicians',
+    'member1.role': 'Vocals',
+    'member2.role': 'Guitar',
+    'member3.role': 'Keyboards',
+    'member4.role': 'Bass',
+    'member5.role': 'Drums'
+  }
+};
+</script>
+</head>
+<body data-page="formacao">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+
+  <!-- SOBRE -->
+  <section class="about page-hero-shell" id="sobre">
+    <div class="about-inner reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="about.eyebrow">Sobre a banda</p>
+      <h1 class="section-title" data-i18n="about.title">A manada cresce a cada concerto</h1>
+      <p class="about-text" data-i18n="about.text">O rock que conheces, com a força que não esperavas. De Amália Rodrigues a Michael Jackson, de tributo a espetáculo — com arranjos modernos e um toque original, a Tribo recria temas icónicos sem perder a essência que os torna inesquecíveis.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <span class="stat-num" data-count="120">0</span>
+        <span class="stat-label" data-i18n="stat1.label">Concertos realizados</span>
+      </div>
+      <div class="stat-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <span class="stat-num" data-count="8">0</span>
+        <span class="stat-label" data-i18n="stat2.label">Anos de estrada</span>
+      </div>
+      <div class="stat-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <span class="stat-num" data-count="45">0</span>
+        <span class="stat-label" data-i18n="stat3.label">Mil ouvintes/mês</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section class="band" id="formacao">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="band.eyebrow">Formação</p>
+      <h2 class="section-title" data-i18n="band.title">Os Músicos</h2>
+    </div>
+
+    <div class="band-grid">
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="member-photo"><img src="assets/rafa-duarte.jpg" alt="Rafa Duarte, vocalista da Tribo"></div>
+        <div class="member-info">
+          <h3 class="member-name">Rafa Duarte</h3>
+          <p class="member-role" data-i18n="member1.role">Voz</p>
+        </div>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="member-photo member-photo-placeholder"><span>IM</span></div>
+        <div class="member-info">
+          <h3 class="member-name">Ivo Martins</h3>
+          <p class="member-role" data-i18n="member2.role">Guitarra</p>
+        </div>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <div class="member-photo"><img src="assets/julio-rosa.jpg" alt="Júlio Rosa, tecladista da Tribo"></div>
+        <div class="member-info">
+          <h3 class="member-name">Júlio Rosa</h3>
+          <p class="member-role" data-i18n="member3.role">Teclas</p>
+          <p class="member-credit">Foto: Katja Laudon</p>
+        </div>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="member-photo"><img src="assets/joao-baixista.jpg" alt="João (Julga), baixista da Tribo"></div>
+        <div class="member-info">
+          <h3 class="member-name">João (Julga)</h3>
+          <p class="member-role" data-i18n="member4.role">Baixo</p>
+        </div>
+      </article>
+
+      <article class="member-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="member-photo"><img src="assets/nuno-cardoso.jpg" alt="Nuno Cardoso, baterista da Tribo"></div>
+        <div class="member-info">
+          <h3 class="member-name">Nuno Cardoso</h3>
+          <p class="member-role" data-i18n="member5.role">Bateria</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

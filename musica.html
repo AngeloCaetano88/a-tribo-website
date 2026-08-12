@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Música — A Tribo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = {
+  pt: {
+    'meta.title': 'Música — A Tribo',
+    'feature.eyebrow': 'Novo Single',
+    'feature.text': 'A Tribo é uma banda de tributo formada em 2018, que reinterpreta êxitos icónicos com peso, groove e um toque original. Ouve agora o novo single e acompanha a digressão 2026 pelos Açores.',
+    'feature.cta.spotify': 'Ouvir no Spotify',
+    'feature.cta.single': 'Novo Single',
+    'videos.eyebrow': 'Vídeos',
+    'videos.title': 'Ao Vivo e nos Bastidores',
+    'videos.subtitle': 'A banda está a preparar o canal oficial no YouTube — em breve, os primeiros vídeos da digressão 2026 aparecem aqui.',
+    'videos.label': 'Vídeo em breve',
+    'videos.hint': 'Segue a A Tribo nas redes sociais para seres o primeiro a saber quando o canal do YouTube estiver no ar.'
+  },
+  en: {
+    'meta.title': 'Music — A Tribo',
+    'feature.eyebrow': 'New Single',
+    'feature.text': 'A Tribo is a tribute band formed in 2018, reinterpreting iconic hits with weight, groove and an original touch. Listen to the new single now and follow the 2026 tour across the Azores.',
+    'feature.cta.spotify': 'Listen on Spotify',
+    'feature.cta.single': 'New Single',
+    'videos.eyebrow': 'Videos',
+    'videos.title': 'Live and Behind the Scenes',
+    'videos.subtitle': 'The band is setting up its official YouTube channel — the first videos from the 2026 tour will appear here soon.',
+    'videos.label': 'Video coming soon',
+    'videos.hint': 'Follow A Tribo on social media to be the first to know when the YouTube channel goes live.'
+  }
+};
+</script>
+</head>
+<body data-page="musica">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+
+  <!-- MÚSICA -->
+  <section class="feature-dark page-hero-shell" id="musica">
+    <div class="feature-bg" aria-hidden="true">
+      <div class="orb orb-d"></div>
+      <div class="orb orb-e"></div>
+      <div class="hero-grid faint"></div>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-copy reveal" data-reveal="left">
+        <p class="eyebrow" data-i18n="feature.eyebrow">Novo Single</p>
+        <h1 class="section-title light">Sangue e Groove</h1>
+        <p class="feature-text" data-i18n="feature.text">A Tribo é uma banda de tributo formada em 2018, que reinterpreta êxitos icónicos com peso, groove e um toque original. Ouve agora o novo single e acompanha a digressão 2026 pelos Açores.</p>
+        <div class="feature-ctas">
+          <a href="#" class="btn btn-gold">
+            <span class="btn-label" data-i18n="feature.cta.spotify">Ouvir no Spotify</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="btn btn-outline">
+            <span class="btn-label" data-i18n="feature.cta.single">Novo Single</span>
+            <span class="btn-border-anim" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="feature-visual reveal" data-reveal="right">
+        <div class="vinyl-frame border-glow-rotating spotlight-card">
+          <div class="vinyl" aria-hidden="true">
+            <div class="vinyl-groove"></div>
+            <div class="vinyl-label"><img src="assets/logo.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÍDEOS -->
+  <section class="media" id="videos">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="videos.eyebrow">Vídeos</p>
+      <h2 class="section-title" data-i18n="videos.title">Ao Vivo e nos Bastidores</h2>
+      <p class="section-subtitle" data-i18n="videos.subtitle">A banda está a preparar o canal oficial no YouTube — em breve, os primeiros vídeos da digressão 2026 aparecem aqui.</p>
+    </div>
+
+    <div class="media-grid">
+      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
+        </div>
+        <span class="media-label" data-i18n="videos.label">Vídeo em breve</span>
+      </div>
+      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
+        </div>
+        <span class="media-label" data-i18n="videos.label">Vídeo em breve</span>
+      </div>
+      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
+        </div>
+        <span class="media-label" data-i18n="videos.label">Vídeo em breve</span>
+      </div>
+    </div>
+
+    <p class="media-hint" data-i18n="videos.hint">Segue a A Tribo nas redes sociais para seres o primeiro a saber quando o canal do YouTube estiver no ar.</p>
+  </section>
+
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

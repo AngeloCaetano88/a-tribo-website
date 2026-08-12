@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Galeria — A Tribo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = {
+  pt: {
+    'meta.title': 'Galeria — A Tribo',
+    'media.eyebrow': 'Galeria',
+    'media.title': 'Fotos e Vídeos',
+    'media.videoLabel': 'Vídeo ao vivo',
+    'media.photoLabel': 'Foto',
+    'media.filter.all': 'Todos',
+    'media.filter.show0': '08 Ago — Semana do Mar',
+    'media.filter.show1': '14 Set — Marina da Horta',
+    'media.filter.show2': '28 Set — Parque Urbano',
+    'media.filter.show3': '05 Out — Angústias',
+    'media.empty': 'Ainda não há fotos ou vídeos nesta categoria.',
+    'media.hint': 'Mais fotos e vídeos dos próximos concertos serão adicionados em breve.'
+  },
+  en: {
+    'meta.title': 'Gallery — A Tribo',
+    'media.eyebrow': 'Gallery',
+    'media.title': 'Photos and Videos',
+    'media.videoLabel': 'Live video',
+    'media.photoLabel': 'Photo',
+    'media.filter.all': 'All',
+    'media.filter.show0': 'Aug 8 — Semana do Mar',
+    'media.filter.show1': 'Sep 14 — Marina da Horta',
+    'media.filter.show2': 'Sep 28 — Parque Urbano',
+    'media.filter.show3': 'Oct 5 — Angústias',
+    'media.empty': 'No photos or videos in this category yet.',
+    'media.hint': 'More photos and videos from upcoming shows will be added soon.'
+  }
+};
+</script>
+</head>
+<body data-page="galeria">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+
+  <!-- GALERIA -->
+  <section class="media page-hero-shell" id="galeria">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="media.eyebrow">Galeria</p>
+      <h1 class="section-title" data-i18n="media.title">Fotos e Vídeos</h1>
+    </div>
+
+    <div class="media-filters reveal" data-reveal="up" role="group" aria-label="Filtrar galeria">
+      <button type="button" class="media-filter-btn is-active" data-filter="all" data-i18n="media.filter.all">Todos</button>
+      <button type="button" class="media-filter-btn" data-filter="show0" data-i18n="media.filter.show0">08 Ago — Semana do Mar</button>
+      <button type="button" class="media-filter-btn" data-filter="show1" data-i18n="media.filter.show1">14 Set — Marina da Horta</button>
+      <button type="button" class="media-filter-btn" data-filter="show2" data-i18n="media.filter.show2">28 Set — Parque Urbano</button>
+      <button type="button" class="media-filter-btn" data-filter="show3" data-i18n="media.filter.show3">05 Out — Angústias</button>
+    </div>
+
+    <div class="media-grid">
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-01-baixista.jpg" alt="Baixista da Tribo ao vivo na Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-02-vocalista.jpg" alt="Vocalista da Tribo ao vivo na Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-03-publico.jpg" alt="Público na Semana do Mar 2026, Horta, Faial" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-04-vocalista-pb.jpg" alt="Vocalista da Tribo, preto e branco, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-05-baixista-luzes.jpg" alt="Baixista da Tribo sob luzes coloridas, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-06-baterista.jpg" alt="Baterista da Tribo ao vivo na Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-07-grupo-1.jpg" alt="A Tribo em grupo no palco, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-08-grupo-2.jpg" alt="A Tribo em grupo nos bastidores, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-09-selfie-vocal.jpg" alt="Selfie com a vocalista da Tribo, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-10-bastidores-1.jpg" alt="Bastidores da Tribo, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile media-tile-photo spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show0">
+        <img src="assets/gallery/semana-do-mar-11-bastidores-2.jpg" alt="Bastidores da Tribo, Semana do Mar 2026" loading="lazy">
+      </div>
+
+      <div class="media-tile spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3" data-show="show1">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10.5" r="1.6"/><path d="m4 17 5-4.5 3 2.5 3.5-4L21 15"/></svg>
+        </div>
+        <span class="media-label" data-i18n="media.photoLabel">Foto</span>
+      </div>
+
+      <div class="media-tile spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1" data-show="show2">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10.5" r="1.6"/><path d="m4 17 5-4.5 3 2.5 3.5-4L21 15"/></svg>
+        </div>
+        <span class="media-label" data-i18n="media.photoLabel">Foto</span>
+      </div>
+
+      <div class="media-tile media-tile-video spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2" data-show="show3">
+        <div class="media-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>
+        </div>
+        <span class="media-label" data-i18n="media.videoLabel">Vídeo ao vivo</span>
+      </div>
+    </div>
+
+    <p class="media-empty" data-i18n="media.empty" hidden>Ainda não há fotos ou vídeos nesta categoria.</p>
+    <p class="media-hint" data-i18n="media.hint">Mais fotos e vídeos dos próximos concertos serão adicionados em breve.</p>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="lightbox-frame">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto seguinte">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

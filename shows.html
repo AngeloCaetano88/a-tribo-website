@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Concertos — A Tribo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = {
+  pt: {
+    'meta.title': 'Concertos — A Tribo',
+    'shows.eyebrow': 'Digressão 2026',
+    'shows.title': 'Próximos Concertos',
+    'shows.subtitle': 'Todos os concertos são de entrada gratuita. Novas datas são adicionadas regularmente — volta sempre para ver as novidades.',
+    'show.photoLabel': 'Foto do Concerto',
+    'show0.date': '08 AGO 2026',
+    'show1.date': '14 SET 2026',
+    'show2.date': '28 SET 2026',
+    'show3.date': '05 OUT 2026',
+    'show.freeEntry': 'Entrada Gratuita',
+    'show.detailsButton': 'Ver Localização'
+  },
+  en: {
+    'meta.title': 'Shows — A Tribo',
+    'shows.eyebrow': '2026 Tour',
+    'shows.title': 'Upcoming Shows',
+    'shows.subtitle': 'Every show is free to attend. New dates are added regularly — check back often for updates.',
+    'show.photoLabel': 'Show Photo',
+    'show0.date': 'AUG 8, 2026',
+    'show1.date': 'SEP 14, 2026',
+    'show2.date': 'SEP 28, 2026',
+    'show3.date': 'OCT 05, 2026',
+    'show.freeEntry': 'Free Entry',
+    'show.detailsButton': 'Get Directions'
+  }
+};
+</script>
+</head>
+<body data-page="shows">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+
+  <!-- SHOWS -->
+  <section class="shows page-hero-shell" id="shows">
+    <div class="section-head reveal" data-reveal="up">
+      <p class="eyebrow" data-i18n="shows.eyebrow">Digressão 2026</p>
+      <h1 class="section-title" data-i18n="shows.title">Próximos Concertos</h1>
+      <p class="section-subtitle" data-i18n="shows.subtitle">Todos os concertos são de entrada gratuita. Novas datas são adicionadas regularmente — volta sempre para ver as novidades.</p>
+    </div>
+
+    <div class="shows-grid">
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="show-photo show-photo-poster">
+          <img src="assets/gallery/cartaz-semana-do-mar.jpg" alt="Cartaz do concerto A Tribo — Semana do Mar 2026, 08 Agosto, Palco do Mar, Horta">
+        </div>
+        <div class="show-info">
+          <p class="show-event">Semana do Mar 2026</p>
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show0.date">08 AGO 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Palco do Mar — CEMAH</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="2">
+        <div class="show-photo"><span data-i18n="show.photoLabel">Foto do Concerto</span></div>
+        <div class="show-info">
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show1.date">14 SET 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Marina da Horta — Faial</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="3">
+        <div class="show-photo"><span data-i18n="show.photoLabel">Foto do Concerto</span></div>
+        <div class="show-info">
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show2.date">28 SET 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Parque Urbano — Horta</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+
+      <article class="show-card spotlight-card border-glow-static reveal" data-reveal="up" data-delay="1">
+        <div class="show-photo"><span data-i18n="show.photoLabel">Foto do Concerto</span></div>
+        <div class="show-info">
+          <div class="show-meta">
+            <p class="show-date" data-i18n="show3.date">05 OUT 2026</p>
+            <span class="show-free" data-i18n="show.freeEntry">Entrada Gratuita</span>
+          </div>
+          <h3 class="show-venue">Angústias — Faial</h3>
+          <a href="#" class="btn btn-primary btn-small">
+            <span class="btn-label" data-i18n="show.detailsButton">Ver Localização</span>
+            <span class="btn-shine" aria-hidden="true"></span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
