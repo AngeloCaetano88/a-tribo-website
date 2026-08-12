@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="description" content="Conhece os músicos da A Tribo.">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="A Tribo">
+<meta property="og:image" content="https://a-tribo-banda.vercel.app/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://a-tribo-banda.vercel.app/assets/og-image.jpg">
+<title>A Tribo — Músico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+window.PAGE_I18N = { pt: {}, en: {} };
+</script>
+</head>
+<body data-page="formacao">
+
+<div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip.link">Saltar para o conteúdo</a>
+
+<div id="navPlaceholder"></div>
+
+<main id="conteudo">
+  <section class="member-profile page-hero-shell">
+    <div class="member-profile-inner reveal in-view" id="memberRoot"></div>
+  </section>
+</main>
+
+<div id="footerPlaceholder"></div>
+
+<script src="members-data.js"></script>
+<script src="partials.js"></script>
+<script src="script.js"></script>
+<script src="member.js"></script>
+</body>
+</html>
