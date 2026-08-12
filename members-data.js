@@ -49,18 +49,18 @@ window.MEMBERS = [
     }
   },
   {
-    slug: 'joao-julga',
-    name: 'João (Julga)',
+    slug: 'joao-pulga',
+    name: 'João (Pulga)',
     photo: 'assets/joao-baixista.jpg',
     role: { pt: 'Baixo', en: 'Bass' },
     bio: {
       pt: [
         'O João segura o groove da Tribo — a linha de baixo que faz o público mexer-se sem sequer perceber porquê. Presença de palco energética, sempre a interagir com quem está à frente.',
-        'Conhecido pela alcunha "Julga", é uma das figuras mais carismáticas da formação, tanto ao vivo como nos bastidores.'
+        'Conhecido pela alcunha "Pulga", é uma das figuras mais carismáticas da formação, tanto ao vivo como nos bastidores.'
       ],
       en: [
         'João holds down A Tribo\'s groove — the bassline that gets the crowd moving without them even noticing why. Energetic stage presence, always engaging with whoever\'s up front.',
-        'Known by the nickname "Julga", he\'s one of the lineup\'s most charismatic figures, both live and backstage.'
+        'Known by the nickname "Pulga", he\'s one of the lineup\'s most charismatic figures, both live and backstage.'
       ]
     }
   },
